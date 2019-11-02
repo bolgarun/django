@@ -118,3 +118,20 @@ For delete account you need to:
 * url http://13.232.70.77/api/v1/accounts/AccountID
 * method DELETE
 * Token (exampl: Token 092e00e4893d42cce7dbfddfc3a2f9e9508743d3)
+
+## Create REFER FRIEND
+Using methods POST, url http://13.232.70.77/api/v1/referrals and Token
+```bash
+POST method
+```
+POST request will accept all bellow fields and create a new record in database table
+
+Using methods POST, url http://13.232.70.77/api/v1/referrals and Token
+```bash
+                 Exampl :  {
+                               "friend_first_name": "Ala",
+                               "friend_last_name":"oor",
+                               "friend_email":"rops@gmail.com",
+                               "friend_phone":"+3009292932"
+                           }
+```
