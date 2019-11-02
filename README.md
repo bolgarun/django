@@ -2,7 +2,7 @@
 
 You must login to get started. If you don't login, you will be notified that you are not authorized.
 ```bash
-Use POST method
+POST method
 ```
 Follow this path http://13.232.70.77/api/v1/login.
 
@@ -20,11 +20,12 @@ A token is a secret key without is impossible to view, create, edit or delete ob
 
 ## Unauthorization
 ```bash
-Use GET method
+GET method
 ```
 Follow this path http://13.232.70.77/api/v1/logout
 
 This method is not available unless you are authorized.
+
 Going url position using the GET method and passing a Token, will be delete Token and the session will end. You will be unauthorized.
 
 
@@ -38,4 +39,19 @@ GET: Read database table and return the MOST RECENT Gold rate
 ```bash
 POST method
 ```
-POST to create new record with current date
+POST: to create new record with current date
+Replace the field in parameter:
+```bash
+                        {"rate": your_rate}
+                    Exampl:  {"rate": 3444.77}
+```
+These methods are not available to you if you are not authorized.
+
+
+## Create, view, edit and delete Account
+```bash
+GET method
+```
+If GET request will accept AccountID then he return Account which you need, like:
+
+  
