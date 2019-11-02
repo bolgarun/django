@@ -3,7 +3,12 @@ You must login to get started. If you don't login, you will be notified that you
 ```bash
 POST method
 ```
-For login you go to to this path http://13.232.70.77/api/v1/login. Input the username and password, then will be created token.
+Follow this path http://13.232.70.77/api/v1/login.
+
+                          ```bash
+                          {"username": "yourusername", "password": "yourpassword"}
+                          ```
+Input the username and password, then will be created token.
 ```bash
 Without a token you will not be able to create objects in the future.
 ```
